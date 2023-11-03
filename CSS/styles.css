@@ -15,7 +15,7 @@ background-image: no-repeat;
     background-color: white;
     border-bottom: solid 2px; 
     padding: 10px;
-    position: fixed;
+    position: sticky;
 }
 
 #navbar{
@@ -51,4 +51,33 @@ button {
 
 button:hover {
     transform: translate(1.2em);
+}
+
+/* Home Page Content */
+/* Animation */
+@keyframes slideInLeft {
+    from {
+        transform: translate(-300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.slideInLeft {
+    animation: slideInLeft 1s ease-in;
+}
+
+/* Description */
+.container-text{
+    display: inline-block;
+    position: center;
+    height: 10px;
+}
+
+.intro-des {
+    position: relative;
+    top: 40px;
+    transform: translate();
+    padding-top: 200px;
 }
